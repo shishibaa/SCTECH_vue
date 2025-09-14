@@ -8,7 +8,7 @@ const props = defineProps({
 
 <template>
 <router-link to="/service">
-  <div class="service-card flex items-center gap-4 p-6 rounded-2xl shadow-md h-50 w-150
+  <div class="service-card flex items-center gap-4 p-6 rounded-2xl shadow-md h-50
               bg-gradient-to-b from-[#ECF4FF] to-[#D1E0F6] max-w-md
               transform transition duration-600 ease-in-out hover:scale-105 cursor-pointer">
     

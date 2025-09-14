@@ -11,7 +11,6 @@
       </div>
 
       <div class="flex items-start ml-auto gap-6">
-        <div class="border-l border-white h-40"></div>
 
         <div class="text-white m-auto">
           <h2 class="text-xl">ติดต่อเรา</h2>
