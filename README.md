@@ -9,7 +9,7 @@ git clone https://github.com/shishibaa/SCTECH_vue my-app
 
 cd my-app
 
-pnpm install
+npm install
 
-pnpm dev
+npm dev
 
