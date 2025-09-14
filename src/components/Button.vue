@@ -1,7 +1,7 @@
 <template>
   <router-link :to="to">
     <button
-      class="contact-btn bg-secondary w-32 h-10 mt-5 cursor-pointer
+      class=" bg-secondary w-32 h-10 mt-5 cursor-pointer
              text-primary rounded-lg transition-all duration-300
              hover:scale-105 hover:shadow-lg hover:bg-btn/90 hover:text-primary">
       {{ label }}
