@@ -56,8 +56,8 @@ const props = defineProps({
                     </ul>
 
                     <a :href="mapsLink" target="_blank" rel="noopener">
-                        <button class="bg-secondary w-32 h-10 mt-5 cursor-pointer
-             text-primary rounded-lg transition-all duration-300
+                        <button class="bg-gradient-to-r from-fontcolor to-secondary  w-32 h-10 mt-5 cursor-pointer
+             text-primary rounded-xl transition-all duration-300
              hover:scale-105 hover:shadow-lg hover:bg-btn/90 hover:text-primary">Google Maps</button>
 
                     </a>

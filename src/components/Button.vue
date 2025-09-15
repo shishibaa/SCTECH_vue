@@ -1,9 +1,9 @@
 <template>
   <router-link :to="to">
     <button
-      class=" bg-secondary w-32 h-10 mt-5 cursor-pointer
-             text-primary rounded-lg transition-all duration-300
-             hover:scale-105 hover:shadow-lg hover:bg-btn/90 hover:text-primary">
+      class=" bg-gradient-to-r from-fontcolor to-secondary mt-5 px-10 py-2 cursor-pointer
+             text-primary rounded-xl transition-all duration-300
+             hover:scale-105 hover:shadow-lg hover:bg-btn/90 hover:text-primary text-xl sm:text-xl md:text-2xl ">
       {{ label }}
     </button>
   </router-link>

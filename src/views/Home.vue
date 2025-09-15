@@ -1,55 +1,116 @@
 <template>
+    <!-- HERO section -->
     <section
-        class=" flex flex-col items-center justify-center text-center h-150 bg-cover bg-center bg-secondary/50 bg-blend-multiply bg-[url(/src/assets/womans-hands-typing-laptop-workplace.jpg)]">
-        <div class="">
-            <img class="mx-auto mb-5 h-auto w-40" src="/src/assets/logo1.svg" alt="">
-            <h1 class="text-[48px] text-shadow-lg text-white">SC TECH (2025) LIMITED PARTNERSHIP</h1>
-            <h1 class="text-[32px] text-shadow-lg text-white">สร้างสรรค์และนำเสนอเทคโนโลยีที่ทันสมัย <br>
-                เพื่อสนับสนุนการเติบโตของลูกค้าและชุมชน</h1>
-            <baseButton to="/contact" label="ติดต่อเรา" />
+        class="relative w-full overflow-hidden bg-cover bg-center bg-secondary/40 bg-blend-multiply bg-[url(/src/assets/womans-hands-typing-laptop-workplace.jpg)]">
+        <div class="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8
+                    min-h-[60vh] md:min-h-[70vh] lg:min-h-[80vh]
+                    flex items-center justify-center text-center">
+            <div class="space-y-5 md:space-y-7">
+                <img class="mx-auto sm:h-10 md:h-20 lg:h-30 w-auto mb-2 md:mb-4" src="/src/assets/logo1.svg"
+                    alt="โลโก้ SC TECH" loading="lazy" />
 
 
+                <h1 id="hero-title"
+                    class="text-white drop-shadow text-xl sm:text-2xl md:text-2xl lg:text-4xl  tracking-tight mb-[0px] font-semibold">
+                    <span class="">SC TECH (2025) LIMITED PARTNERSHIP</span>
+                    
+                </h1>
+                <p class="text-white/95 drop-shadow text-lg sm:text-xl md:text-2xl leading-relaxed mb-[0px]">
+                    สร้างสรรค์และนำเสนอเทคโนโลยีที่ทันสมัย
+                    <br class="hidden md:inline" />
+                    เพื่อสนับสนุนการเติบโตของลูกค้าและชุมชน
+                </p>
+
+
+                <router-link to="/quotation"
+                        class="inline-flex items-center justify-center gap-2 bg-gradient-to-r px-10 m-5 from-secondary to-secondary text-white py-2 rounded-xl shadow-lg  transition-all duration-300 hover:scale-[1.02] hover:from-lightblue1 hover:to-lightblue2 hover:text-fontcolor">
+                        ติดต่อเรา
+
+                    </router-link>
+            </div>
         </div>
     </section>
 
-    <section class="animate-fade-up animate-once animate-ease-in h-140 p-20 grid grid-cols-2 grid-rows-1 gap-4 
-                bg-gradient-to-b from-[#FFFFFF] via-[#F5F5F5] to-[#D1E0F6]">
-        <div>
-            <h1 class="text-[30px] text-fontcolor underline underline-offset-4 decoration-[3px] mb-5">เกี่ยวกับเรา</h1>
-            <p class="text-[24px] text-fontcolor">ผู้นำในด้านการพัฒนาแอพพลิเคชันให้บริการโซลูชั่นไอที
-                <br>ที่เชื่อถือได้และมีคุณภาพสูง สร้างสรรค์และนำเสนอเทคโนโลยี <br> ที่ทันสมัย
-                เพื่อสนับสนุนการเติบโตของลูกค้าและชุมชน <br>
-                <br>มุ่งหวังที่จะเป็นพาร์ทเนอร์ที่ลูกค้าสามารถไว้วางใจได้ <br>
-                ในการเดินทางสู่อนาคตที่ใช้เทคโนโลยีเป็นหัวใจหลัก <br>
-                ในการพัฒนาปรับปรุงองค์กรและธุรกิจ
-            </p>
-            <baseButton to="/about" label="ดูเพิ่มเติม" />
-
-        </div>
-        <div>
-            <img src="/src/assets/top-view-woman-s-hands-working-with-laptop.jpg" class="w-150 rounded-xl" alt="">
-        </div>
-    </section>
+    <!-- ABOUT section -->
     <section
-        class="service-section shadow-lg animate-fade-up animate-once animate-ease-in flex flex-col items-center justify-center text-center p-15 bg-cover bg-center">
-        <span><h1 class="text-[32px] text-fontcolor underline underline-offset-4 decoration-[3px] mb-5">บริการของเรา</h1></span>
-        <div class="grid grid-cols-2 grid-rows-2 gap-20 m-10">
-            <ServiceCard title="พัฒนาซอฟต์แวร์ แอปพลิเคชัน"
-                description="เว็บไซต์ โปรแกรมสำเร็จรูป การเขียนโปรแกรมตามวัตถุประสงค์ของโครงการ" :icon="CodingIcon" />
-            <ServiceCard title="จัดหา ติดตั้ง จำหน่าย ซื้อ ขาย นำเข้า "
-                description="ครุภัณฑ์ คอมพิวเตอร์ สำนักงาน ไฟฟ้าและวิทยุ ตามบัญชีราคามาตรฐาน ICT"
-                :icon="ComputerIcon" />
-            <ServiceCard title="จัดหา ติดตั้ง จำหน่าย " description="ระบบผลิตไฟฟ้าจากพลังงานแสงอาทิตย์ ตามบัญชีราคากลาง"
-                :icon="SolarIcon" />
-            <ServiceCard title="รับแปลภาษา"
-                description="บทความ วิชาการ บทภาพยนตร์ ละคร คลิปวีดีโอ รวมทั้งแปลเอกสารต่างๆ" :icon="PenIcon" />
+        class="animate-fade-up animate-once animate-ease-in bg-gradient-to-b from-[#FFFFFF] via-[#F5F5F5] to-[#D1E0F6]">
+        <div class="mx-auto  max-w-7xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+            <div class="grid grid-cols-1 lg:grid-cols-2 ">
 
+                <h1 class=" text-2xl sm:text-3xl md:text-4xl text-center lg:text-left
+                            lg:col-start-1 lg:row-start-1 m-2 font-extrabold">
+                    <span class=" font-extrabold 
+                                         text-transparent bg-clip-text bg-gradient-to-r from-fontcolor to-secondary ">
+                        เกี่ยวกับเรา</span>
+                </h1>
+                <br>
+                <img src="/src/assets/top-view-woman-s-hands-working-with-laptop.jpg" alt=""
+                    class="w-full rounded-xl object-cover shadow-md mx-auto
+                    lg:col-start-2 lg:row-span-2" loading="lazy" />
+
+                <p class="m-3 text-fontcolor leading-relaxed text-base sm:text-lg md:text-xl lg:text-2xl
+                text-center lg:text-left lg:col-start-1 lg:row-start-2">
+                    ผู้นำในด้านการพัฒนาแอพพลิเคชันให้บริการโซลูชันไอทีที่เชื่อถือได้และมีคุณภาพสูง
+                    <span class="block mt-2">สร้างสรรค์และนำเสนอเทคโนโลยีที่ทันสมัย
+                        เพื่อสนับสนุนการเติบโตของลูกค้าและชุมชน</span>
+                    <span class="block mt-4 ">มุ่งหวังที่จะเป็นพาร์ทเนอร์ที่ลูกค้าสามารถไว้วางใจได้
+                        ในการเดินทางสู่อนาคตที่ใช้เทคโนโลยีเป็นหัวใจหลักในการพัฒนาปรับปรุงองค์กรและธุรกิจ</span>
+
+                    <span class="w-full flex justify-center lg:justify-start lg:col-start-1 lg:row-start-3">
+                        <baseButton to="/about" label="ดูเพิ่มเติม" class="text-[18px]" />
+                    </span>
+                </p>
+
+
+
+            </div>
         </div>
     </section>
+
+    <!-- SERVICE section -->
+    <section
+        class="service-section  w-full shadow-lg animate-fade-up animate-once animate-ease-in bg-cover bg-center py-16 px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-7xl">
+            <h1 class="mx-auto text-center mb-3"><span
+                    class=" text-2xl sm:text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-fontcolor to-secondary ">บริการของเรา</span>
+            </h1>
+
+            <p class="text-center text-xl sm:text-xl md:text-2xl mb-4 text-secondary">
+                โซลูชันเทคโนโลยีครบวงจรเพื่อธุรกิจและองค์กร</p>
+            <br>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 sm:gap-8 items-stretch">
+                <div class="h-full">
+                    <ServiceCard title="พัฒนาซอฟต์แวร์ แอปพลิเคชัน"
+                        description="เว็บไซต์ โปรแกรมสำเร็จรูป การเขียนโปรแกรมตามวัตถุประสงค์ของโครงการ"
+                        :icon="CodingIcon" />
+                </div>
+                <div class="h-full">
+                    <ServiceCard title="จัดหา ติดตั้ง จำหน่าย ซื้อ ขาย นำเข้า "
+                        description="ครุภัณฑ์ คอมพิวเตอร์ สำนักงาน ไฟฟ้าและวิทยุ ตามบัญชีราคามาตรฐาน ICT"
+                        :icon="ComputerIcon" />
+                </div>
+                <div class="h-full">
+                    <ServiceCard title="จัดหา ติดตั้ง จำหน่าย "
+                        description="ระบบผลิตไฟฟ้าจากพลังงานแสงอาทิตย์ ตามบัญชีราคากลาง" :icon="SolarIcon" />
+                </div>
+                <div class="h-full">
+                    <ServiceCard title="รับแปลภาษา"
+                        description="บทความ วิชาการ บทภาพยนตร์ ละคร คลิปวีดีโอ รวมทั้งแปลเอกสารต่างๆ" :icon="PenIcon" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT section -->
     <section
         class="contact-section bg-cover bg-center h-160 animate-fade-up flex flex-col items-center justify-center text-center bg-gradient-to-b from-[#FFFFFF]  to-primary">
-        <h1 class="text-[32px] text-fontcolor underline underline-offset-4 decoration-[3px] mb-10 text-center">ติดต่อเรา
-        </h1>
+             
+        <h1 class="mx-auto text-center mb-2"><span
+                    class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-fontcolor to-secondary  ">ติดต่อเรา</span>
+            </h1>
+                        <p class="text-center text-xl sm:text-xl md:text-2xl text-secondary mb-5">ดูแผนที่ หรือติดต่อทีมเราได้ทางอีเมลและโทรศัพท์</p>
+
+
 
         <MapCard
             maps-embed-url="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d478.8095309358353!2d103.04955189814909!3d16.247344038437564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTbCsDE0JzUwLjMiTiAxMDPCsDAyJzU4LjciRQ!5e0!3m2!1sen!2sth!4v1757831814686!5m2!1sen!2sth"
@@ -57,7 +118,11 @@
             address="ที่อยู่ 159 ม. 23 ต.หัวขวาง อ.โกสุมพิสัย จ.มหาสารคาม 44140" phone="095-606-5832"
             email="sctech95@gmail.com" />
     </section>
+    <br>
+    <br>
 </template>
+
+
 <style scoped>
 .service-section {
     background-color: #ffffff;
@@ -75,7 +140,6 @@
 import baseButton from '../components/Button.vue';
 import ServiceCard from '../components/ServiceCard.vue';
 import MapCard from "../components/MapCard.vue"
-
 import CodingIcon from '/src/assets/coding.svg';
 import ComputerIcon from '/src/assets/computer.svg'
 import SolarIcon from '/src/assets/solar.svg'

@@ -15,5 +15,12 @@
   --color-secondary: #3A5E98;
   --color-fontcolor: #001F3F;
   --color-btn: #001F3F;
-
+  --color-brightblue: #0051A5;
+  --color-lightblue1: #D1E0F6;
+  --color-lightblue2: #ECF4FF;
 }
+
+*{
+  box-sizing: border-box;
+}
+
