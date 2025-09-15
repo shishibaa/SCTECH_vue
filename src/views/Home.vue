@@ -1,7 +1,9 @@
 <template>
     <!-- HERO section -->
-    <section
-        class="relative w-full overflow-hidden bg-cover bg-center bg-secondary/40 bg-blend-multiply bg-[url(/src/assets/womans-hands-typing-laptop-workplace.jpg)]">
+    <section class="relative bg-cover bg-center"
+        style="background-image:url('/src/assets/womans-hands-typing-laptop-workplace.jpg')">
+        <div class="absolute inset-0 bg-secondary/40"></div>
+
         <div class="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8
                     min-h-[60vh] md:min-h-[70vh] lg:min-h-[80vh]
                     flex items-center justify-center text-center">
@@ -11,9 +13,9 @@
 
 
                 <h1 id="hero-title"
-                    class="text-white drop-shadow text-xl sm:text-2xl md:text-2xl lg:text-4xl  tracking-tight mb-[0px] font-semibold">
+                    class="text-white drop-shadow text-xl sm:text-2xl md:text-2xl lg:text-4xl  tracking-tight mb-[5px] font-semibold">
                     <span class="">SC TECH (2025) LIMITED PARTNERSHIP</span>
-                    
+
                 </h1>
                 <p class="text-white/95 drop-shadow text-lg sm:text-xl md:text-2xl leading-relaxed mb-[0px]">
                     สร้างสรรค์และนำเสนอเทคโนโลยีที่ทันสมัย
@@ -23,10 +25,10 @@
 
 
                 <router-link to="/quotation"
-                        class="inline-flex items-center justify-center gap-2 bg-gradient-to-r px-10 m-5 from-secondary to-secondary text-white py-2 rounded-xl shadow-lg  transition-all duration-300 hover:scale-[1.02] hover:from-lightblue1 hover:to-lightblue2 hover:text-fontcolor">
-                        ติดต่อเรา
+                    class="inline-flex items-center justify-center gap-2 bg-gradient-to-r px-10 m-5 from-secondary to-secondary text-white py-2 rounded-xl shadow-lg  transition-all duration-300 hover:scale-[1.02] hover:from-lightblue1 hover:to-lightblue2 hover:text-fontcolor">
+                    ติดต่อเรา
 
-                    </router-link>
+                </router-link>
             </div>
         </div>
     </section>
@@ -44,8 +46,7 @@
                         เกี่ยวกับเรา</span>
                 </h1>
                 <br>
-                <img src="/src/assets/top-view-woman-s-hands-working-with-laptop.jpg" alt=""
-                    class="w-full rounded-xl object-cover shadow-md mx-auto
+                <img src="/src/assets/top-view-woman-s-hands-working-with-laptop.jpg" alt="" class="w-full rounded-xl object-cover shadow-md mx-auto
                     lg:col-start-2 lg:row-span-2" loading="lazy" />
 
                 <p class="m-3 text-fontcolor leading-relaxed text-base sm:text-lg md:text-xl lg:text-2xl
@@ -104,11 +105,12 @@
     <!-- CONTACT section -->
     <section
         class="contact-section bg-cover bg-center h-160 animate-fade-up flex flex-col items-center justify-center text-center bg-gradient-to-b from-[#FFFFFF]  to-primary">
-             
+
         <h1 class="mx-auto text-center mb-2"><span
-                    class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-fontcolor to-secondary  ">ติดต่อเรา</span>
-            </h1>
-                        <p class="text-center text-xl sm:text-xl md:text-2xl text-secondary mb-5">ดูแผนที่ หรือติดต่อทีมเราได้ทางอีเมลและโทรศัพท์</p>
+                class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-fontcolor to-secondary  ">ติดต่อเรา</span>
+        </h1>
+        <p class="text-center text-xl sm:text-xl md:text-2xl text-secondary mb-5">ดูแผนที่
+            หรือติดต่อทีมเราได้ทางอีเมลและโทรศัพท์</p>
 
 
 
