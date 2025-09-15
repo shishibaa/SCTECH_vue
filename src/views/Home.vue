@@ -3,8 +3,8 @@
         class=" flex flex-col items-center justify-center text-center h-150 bg-cover bg-center bg-secondary/50 bg-blend-multiply bg-[url(/src/assets/womans-hands-typing-laptop-workplace.jpg)]">
         <div class="">
             <img class="mx-auto mb-5 h-auto w-40" src="/src/assets/logo1.svg" alt="">
-            <h1 class="text-[36px] text-shadow-lg text-white">SC TECH (2025) LIMITED PARTNERSHIP</h1>
-            <h1 class="text-[24px] text-shadow-lg text-white">สร้างสรรค์และนำเสนอเทคโนโลยีที่ทันสมัย <br>
+            <h1 class="text-[48px] text-shadow-lg text-white">SC TECH (2025) LIMITED PARTNERSHIP</h1>
+            <h1 class="text-[32px] text-shadow-lg text-white">สร้างสรรค์และนำเสนอเทคโนโลยีที่ทันสมัย <br>
                 เพื่อสนับสนุนการเติบโตของลูกค้าและชุมชน</h1>
             <baseButton to="/contact" label="ติดต่อเรา" />
 
