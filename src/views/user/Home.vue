@@ -139,9 +139,9 @@
 
 
 <script setup>
-import baseButton from '../components/Button.vue';
-import ServiceCard from '../components/ServiceCard.vue';
-import MapCard from "../components/MapCard.vue"
+import baseButton from '../../components/Button.vue';
+import ServiceCard from '../../components/ServiceCard.vue';
+import MapCard from "../../components/MapCard.vue"
 import CodingIcon from '/src/assets/coding.svg';
 import ComputerIcon from '/src/assets/computer.svg'
 import SolarIcon from '/src/assets/solar.svg'

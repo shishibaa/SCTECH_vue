@@ -35,7 +35,7 @@
                      after:origin-center after:scale-x-0 after:bg-secondary after:content-['']
                      after:transition-transform after:duration-600 hover:after:scale-x-100
                      focus-visible:after:scale-x-100 after:rounded-full"
-                            active-class="text-secondary after:scale-x-100">หน้าแรก</router-link>
+                            exact-active-class="text-secondary after:scale-x-100">หน้าแรก</router-link>
                     </li>
                     <li>
                         <router-link to="/about" class="relative px-1 py-2 pb-0 transition-colors duration-200 hover:text-secondary
@@ -78,7 +78,7 @@
                         <li>
                             <router-link to="/"
                                 class="block px-2 py-2 rounded-lg transition-colors duration-200 hover:bg-secondary/10"
-                                active-class="text-secondary" @click="close()">หน้าแรก</router-link>
+                                exact-active-class="text-secondary" @click="close()">หน้าแรก</router-link>
                         </li>
                         <li>
                             <router-link to="/about"

@@ -16,6 +16,6 @@
 </template>
 
 <script setup>
-import MapCard from "../components/MapCard.vue"
+import MapCard from "../../components/MapCard.vue"
 
 </script>
